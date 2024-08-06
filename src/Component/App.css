@@ -1,0 +1,150 @@
+/*F5F5DC is a light beige color, which is a great neutral base for a to-do list application. Here are some color options for different sections that would complement this background:
+
+**Text:**
+
+* **Black (#000000):** This provides the highest contrast and readability for text, especially for important information like task titles and deadlines.
+* **Very dark gray (#333333):**  A softer alternative to black that's still easy to read on the beige background.
+
+**List Items:**
+
+* **White (#FFFFFF):**  Clean and classic for list items, especially when combined with a dark border to separate them. 
+* **Light Gray (#DDDDDD):**  Creates a subtle separation between list items while maintaining a light and airy feel.
+
+**Priority Levels:**
+
+* **Red (#FF0000):**  A universally recognized color for urgency, ideal for highlighting high-priority tasks.
+* **Orange (#FFA500):**  Grabs attention but less intense than red, good for medium priority tasks.
+* **Green (#32CD32):**  Associated with success and completion, perfect for marking completed tasks or low-priority ones.
+
+**Accents:**
+
+* **Blue (#007BFF):**  Evokes feelings of trust and productivity, well-suited for buttons, progress bars, or category headers.
+* **Purple (#6F42C1):**  Adds a touch of creativity and can be used for highlighting specific sections or completed milestones.
+
+**Additional Tips:**
+
+* Consider using a **color palette generator** to find harmonious combinations that go well with your base color.
+* **Maintain good contrast:**  Always ensure there's enough contrast between text and background colors for readability. You can use online contrast checkers for this.
+* **Offer customization:** Allow users to personalize the color scheme based on their preferences.
+
+By following these tips and using the suggested colors, you can create a visually appealing and functional to-do list application with a pleasing background color.*/
+
+
+
+
+
+
+.App {
+  width:100vw;
+  height:100vh;
+  background-color: #F5F5DC;
+  display: flex ;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.App h1{
+  font-size: 42px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hrline{
+  width: 95%;
+  height: 1px;
+  background-color: #333333;
+  position: relative;
+  bottom:10px;
+}
+
+.App .task{
+  width: 95%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.task input{
+  width: 85%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task button{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  padding: 10px;
+  margin-left: calc(2vw - 5px);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkslategrey;
+  color:white;
+  cursor:pointer;
+}
+
+
+
+.Notes{
+  width:75%;
+  height: 1350px;
+  background-color: #DDDDDD;
+  margin-top: 50px;
+  border-radius: 15px;
+  position: relative;
+  bottom: 25px;
+  overflow-y: scroll;
+  box-shadow: 1px 1px 15px 0px rgb(104, 104, 104);
+}
+
+.Notes::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+#t1{
+  width:8%;
+}
+
+#t2{
+  width:72%;
+}
+
+#t3{
+  width:20%;
+}
+
+tr, th, td{
+  height:35px;
+}
+th{
+  border-bottom: 2px solid rgb(165, 165, 165);
+  box-shadow: 0px 1px 5px rgb(139, 139, 139);
+}
+
+
+
+table{
+width:100%;
+border-radius:15px;
+height:auto;
+}
+
+#delicon{
+  color: red;
+  cursor: pointer;
+  height: 60%;
+  width:  auto;
+  object-fit: fit;
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+}
